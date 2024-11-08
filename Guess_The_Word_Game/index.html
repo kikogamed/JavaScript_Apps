@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess The Word Game</title>
+  <link rel="stylesheet" href="./CSS/guess-word.css">
+</head>
+<body>
+  <!-- Page Title -->
+  <div class="title">Guess The Word</div>
+  <!-- frame -->
+  <div class="frame">
+    <!-- left side -->
+    <div class="left">
+      <div class="try t1">
+        <p>Try 1</p>
+        <div>
+          <input type="text" autofocus>
+          <div class="line"></div>
+        </div>
+        <div>
+          <input type="text" >
+          <div class="line"></div>
+        </div>
+        <div>
+          <input type="text">
+          <div class="line"></div>
+        </div>        
+        <div>
+          <input type="text">
+          <div class="line"></div>
+        </div>        
+        <div>
+          <input type="text">
+          <div class="line"></div>
+        </div>        
+        <div>
+          <input type="text" maxlength="1">
+          <div class="line"></div>
+        </div>      
+      </div>
+      <div class="try t2">
+        <p>Try 2</p>
+        <div>
+          <input type="text">
+          <div class="line"></div>
+        </div>
+        <div>
+          <input type="text">
+          <div class="line"></div>
+        </div>
+        <div>
+          <input type="text">
+          <div class="line"></div>
+        </div>        
+        <div>
+          <input type="text">
+          <div class="line"></div>
+        </div>        
+        <div>
+          <input type="text">
+          <div class="line"></div>
+        </div>        
+        <div>
+          <input type="text" maxlength="1">
+          <div class="line"></div>
+        </div>    
+      </div>
+      <div class="try t3">
+        <p>Try 3</p>
+        <div>
+          <input type="text" >
+          <div class="line"></div>
+        </div>
+        <div>
+          <input type="text">
+          <div class="line"></div>
+        </div>
+        <div>
+          <input type="text">
+          <div class="line"></div>
+        </div>        
+        <div>
+          <input type="text">
+          <div class="line"></div>
+        </div>        
+        <div>
+          <input type="text">
+          <div class="line"></div>
+        </div>        
+        <div>
+          <input type="text" maxlength="1">
+          <div class="line"></div>
+        </div>    
+      </div>
+      <div class="try t4">
+        <p>Try 4</p>
+        <div>
+          <input type="text" >
+          <div class="line"></div>
+        </div>
+        <div>
+          <input type="text">
+          <div class="line"></div>
+        </div>
+        <div>
+          <input type="text">
+          <div class="line"></div>
+        </div>        
+        <div>
+          <input type="text">
+          <div class="line"></div>
+        </div>        
+        <div>
+          <input type="text">
+          <div class="line"></div>
+        </div>        
+        <div>
+          <input type="text" maxlength="1">
+          <div class="line"></div>
+        </div>    
+      </div>
+      <div class="try t5">
+        <p>Try 5</p>
+        <div>
+          <input type="text" >
+          <div class="line"></div>
+        </div>
+        <div>
+          <input type="text">
+          <div class="line"></div>
+        </div>
+        <div>
+          <input type="text">
+          <div class="line"></div>
+        </div>        
+        <div>
+          <input type="text">
+          <div class="line"></div>
+        </div>        
+        <div>
+          <input type="text">
+          <div class="line"></div>
+        </div>        
+        <div>
+          <input type="text" maxlength="1">
+          <div class="line"></div>
+        </div>    
+      </div>
+      <div class="try t6">
+        <p>Try 6</p>
+        <div>
+          <input type="text" >
+          <div class="line"></div>
+        </div>
+        <div>
+          <input type="text">
+          <div class="line"></div>
+        </div>
+        <div>
+          <input type="text">
+          <div class="line"></div>
+        </div>        
+        <div>
+          <input type="text">
+          <div class="line"></div>
+        </div>        
+        <div>
+          <input type="text">
+          <div class="line"></div>
+        </div>        
+        <div>
+          <input type="text" maxlength="1">
+          <div class="line"></div>
+        </div>    
+      </div>
+    </div>
+    <!-- Right Side -->
+    <div class="right">
+      <p>Key Colors</p>
+      <div class="key k1">
+        <div class="color"></div>
+        <p>Letter Is Right And In place</p>
+      </div>
+      <div class="key k2">
+        <div class="color"></div>
+        <p>Letter Is Right But Not In place</p>
+      </div>
+      <div class="key k3">
+        <div class="color"></div>
+        <p>Letter Doesn't Exist In The Word</p>
+      </div>
+
+      <!-- win and loose -->
+      <div class="finish">
+        <p></p>
+        <button>Play Again</button>
+      </div>
+    </div>
+  </div>
+  <!-- Buttons check and Hint -->
+  <div class="btns">
+    <button class="check">Check Word</button>
+    <button class="hint"><span></span> Hint</button>
+  </div>
+
+  <!-- JS -->
+  <script src="./JS/guessWord.js"></script>  
+</body>
+</html>

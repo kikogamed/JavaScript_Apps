@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Editor</title>
+    <link rel="stylesheet" href="./CSS/article_editor.css">
+</head>
+<body>
+    <div class="editor">
+        <div class="row">
+            <select name="font" class="font">
+                <option value="none">choose font--</option>
+                <option value="sans-serif">sans-serif</option>
+                <option value="cursive">cursive</option>
+                <option value="monospace">monospace</option>
+            </select>
+            <label for="bold">
+                <input type="checkbox" class="bold" id="bold">
+                <span class="B">B</span>
+            </label>
+            <button class="minus">-</button>
+            <span class="size">16</span>
+            <button class="plus">+</button>
+            <label for="invert">
+                <input type="checkbox" id="invert" class="invert">
+                <span class="s">Invert Colors</span>
+            </label>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem asperiores, iste aliquam autem facilis eius delectus unde sapiente? A eos beatae quia accusamus vel aliquam impedit culpa eligendi nostrum recusandae.</p>
+    </div>
+    <script src="./JS/article_editor.js"></script>
+</body>
+</html>

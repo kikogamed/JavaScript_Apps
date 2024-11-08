@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./CSS/weather.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+    <!-- app container -->
+    <div class="app">
+        <!-- search area -->
+        <div class="search">
+            <input type="text" autofocus>
+            <div class="icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+        <!-- weather statue img -->
+        <div class="weather-img">
+            <img src="./imgs/weather-app-img/images/clear.png" alt="">
+        </div>
+        <!-- degree -->
+        <div class="degree"><span>30</span>&deg;c</div>
+        <!-- City -->
+        <div class="city">Cairo</div>
+        <!-- humidity and wind speed -->
+        <div class="last">
+            <!-- humidity -->
+            <div class="humidity">
+                <img src="./imgs/weather-app-img/images/humidity.png" alt="">
+                <div class="number">
+                    <span>60</span>%
+                    <div class="word">Humidity</div>
+                </div>
+            </div>
+            <!-- wind speed -->
+            <div class="wind">
+                <img src="./imgs/weather-app-img/images/wind.png" alt="">
+                <div class="speed">
+                    <div class="number">
+                        <span>15 </span>
+                        km/h
+                    </div>
+                    <div class="word">Wind Speed</div>
+                </div>
+            </div>
+        </div>
+        <!-- search results -->
+         <div class="results"></div>
+    </div>
+    <!-- JS -->
+    <script src="./JS/weather.js"></script>
+</body>
+</html>

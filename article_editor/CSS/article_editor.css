@@ -1,0 +1,88 @@
+.editor {
+    background-color: #eee;
+    padding: 20px;
+}
+.row {
+    height: 30px;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+.row *{
+     height: 100%;
+}
+.font {
+    border: none;
+    appearance: none;
+    padding: 5px;
+}
+.font:focus {
+    outline: none;
+}
+.font::-ms-expand {
+    display: none;
+}
+input[type = "checkbox"] {
+    appearance: none;
+}
+.B,
+label[for = "invert"] span {
+    background-color: white;
+    padding: 5px;
+    font-size: 19px;
+    opacity: 0.6;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    margin-left: -5px;
+}
+.B:hover,
+label[for = "invert"] span:hover {
+    opacity: 1;
+
+}
+.bold:checked + .B {
+    opacity: 1;
+}
+.bold {
+    height: 0;
+}
+.invert:checked + .s{
+    opacity: 1;
+}
+label[for = "invert"] span{
+    /* opacity: 1; */
+    margin-left: -9px;
+}
+.plus,
+.minus {
+    border: none;
+    background-color: white;
+    margin-left: 2px;
+    text-align: center;
+    width: 27px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.plus:hover,
+.minus:hover {
+    opacity: .6 !important;
+}
+.size {
+    font-size: 17px;
+    background-color: white;
+    text-align: center;
+    width: 27px;
+    margin-left: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.invert {
+    height: 0;
+}
+p {
+    background-color: white;
+    padding: 15px;
+}
+

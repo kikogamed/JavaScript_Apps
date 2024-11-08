@@ -1,0 +1,119 @@
+body {
+    background-color: #ccc;
+}
+
+.frame {
+    background-color: #1e3364;
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    overflow: hidden;
+}
+
+.game {
+    position: relative;
+    display: grid;
+    height: 600px;
+    grid-template-columns: repeat(21 , 1fr);
+    grid-template-rows: repeat(21 , 1fr);
+}
+
+.line {
+    position: absolute;
+    background-color: red;
+}
+
+.top {
+    width: 600px;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 30px;
+    box-shadow: 0px 3px 1px 0px black;
+    z-index: 5;
+}
+.bottom {
+    width: 600px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 660px;
+    height: 30px;
+    box-shadow: 0px -3px 1px 0px black;
+    z-index: 5;
+}
+
+
+.square {
+    background-color: #e8e1df;
+    border: 1px solid black;
+    z-index: 3;
+}
+
+.food {
+    background-color: #c59448;
+    z-index: 2;
+}
+
+.game-over {
+    color: red;
+    font-size: 100px;
+    position: absolute;
+    left: 50%;
+    top: 42%;
+    transform: translate(-50%, -50%);
+    text-shadow: 4px 4px 1px black;
+    z-index: 5;
+    font-weight: bold;
+}
+
+.scale {
+    width: 600px;
+    height: 600px;
+    background-color: #311d21;
+    opacity: .9;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.again {
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    width: 130px;
+    height: 35px;
+    font-weight: bold;
+}
+
+.end {
+    display: none;
+}
+
+.stop {
+    display: none;
+}
+
+.eye {
+    background-color: black;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+}
+
+.right {
+    left: 3px;
+    top: 22%;
+}
+
+.left {
+    left: 3px;
+    top: 66%;
+}

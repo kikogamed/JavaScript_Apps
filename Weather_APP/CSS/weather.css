@@ -1,0 +1,146 @@
+body {
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+}
+
+*::selection {
+    background-color: #5b548a;
+}
+
+/* app frame */
+.app {
+    background-image: linear-gradient(135deg , #00feba , #5b548a  );
+    border-radius: 10px;
+    margin-top: 70px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* search area */
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* search input field */
+.search input {
+    border: none;
+    border-radius: 30px;
+    height: 20px;
+    padding: 10px;
+    color: #767272;
+    font-size: 17px;
+    caret-color: #00feba;
+}
+.search input:focus {
+    outline: none;
+}
+
+/* search icon */
+.search .icon {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #7e918f;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* weather statue img */
+
+.weather-img img {
+    width: 150px;
+}
+
+/* Degree */
+
+.degree {
+    color: white;
+    font-size: 70px;
+    font-family: sans-serif;
+}
+.degree span {
+    font-weight: bold;
+}
+
+/* City */
+
+.city {
+    font-size: 40px;
+    font-family: sans-serif;
+    color: white;
+}
+
+/* humidity and wind speed container */
+
+.last {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+    color: white;
+}
+
+.last img {
+    width: 20px;
+    height: 20px;
+}
+
+.humidity,
+.wind {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+}
+
+.number span {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+/* show results */
+
+.results {
+    background-color: white;
+    padding: 20px;
+    position: absolute;
+    top: 81px;
+    left: 0;
+    width: 89%;
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.k {
+    margin-bottom: 1px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    color: #4e8577;
+    font-family: sans-serif;
+}
+
+.k:hover {
+    background-color: #eee;
+}
+
+.hoverd  {
+    background-color: #eee;
+}

@@ -1,0 +1,182 @@
+body {
+    padding: 100px 700px;
+    background-color: #eee;
+    transform: scale(0.5);
+    transform-origin: top left;
+    width: 100%;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+/* imgs of the game */
+.imgs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px 0;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+/* container of question img and random img */
+.imgs div {
+    /* width: 250px; */
+    flex-basis: calc(100% / 5);
+    position: relative;
+    height: 250px;
+}
+/* question imgs */
+.imgs div .q {
+    width: 250px;
+    height: 250px;
+    backface-visibility: hidden;
+    cursor: pointer;
+    transition: .5s;
+}
+/* random imgs */
+.imgs div .random {
+    width: 250px;
+    height: 250px;
+    backface-visibility: hidden;
+    transition: .5s;
+    position: relative;
+    top: -250px;
+    transform: rotateY(180deg);
+    z-index: -1;
+}
+
+/* Start Game */
+.start p {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    z-index: 3;
+    margin-right: 333px;
+    margin-bottom: 80px;
+}
+/* levels container */
+.start .d {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 25%;
+    left: 44%;
+    gap: 20px;
+}
+.scale {
+    background-color: #272727;
+    opacity: .97;
+    height: 200vh;
+    width: 200%;
+    z-index: 2;
+    position: absolute;
+    top: -20px;
+    left: -26px;
+}
+
+/* levels btns */
+.btn {
+    color: white;
+    transform: translate(-50% , -50%);
+    z-index: 3;
+    background-color: red;
+    transition: .3s;
+    width: 350px;
+    height: 120px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 55px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.btn:hover {
+    background-color: #b60404;
+}
+
+/* Time and Tries */
+
+/* container of time and tries */
+.t {
+    border: 1px solid blue;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: white;
+    color: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+    width: 1430px;
+    margin-bottom: 20px;
+}
+
+/* winning */
+.win {
+    display: none;
+}
+.win p {
+    z-index: 3;
+    position: absolute;
+    left: 48.7%;
+    top: 39%;
+    transform: translate(-50% , -50%);
+    color: #02be02;
+    font-size: 100px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+.win .scale {
+    opacity: 1;
+}
+
+/* play again btn */
+.again {
+    top: 65%;
+    background-color: #5e975b;
+    width: 300px;
+    height: 88px;
+    font-size: 40px;
+    position: absolute;
+    left: 49%;
+}
+.again:hover {
+    background-color: green;
+}
+
+/* score and max score */
+.win .score {
+    font-size: 45px;
+    position: absolute;
+    top: 51%;
+    z-index: 4;
+    left: 49%;
+    color: white;
+    font-weight: bold; 
+    transform: translateX(-50%);
+}
+
+.win .score span {
+    color: yellow;
+}
+
+.win .max {
+    top: 55%;
+}
+/* Lose */
+
+.lose p {
+    color: red;
+}
+
+.lose .again:hover {
+    background-color: #b60404;
+}
+
+.lose .again {
+    top: 55%;
+}

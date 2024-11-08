@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.frame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    margin-top: -20px;
+}
+
+.imgs {
+    overflow: hidden;
+    background-image: url(../imgs/background_change_img/background_change_img/background.png);
+    position: relative;
+    margin: auto;
+    line-height: 0;
+    width: 60%;
+}
+
+.original {
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+
+.arrow {
+    position: absolute;
+    width: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    margin-left: -14px;
+    z-index: 2;
+}
+
+
+.slider {
+    position: absolute;
+    height: 100%;
+    background-color: white;
+    width: 2px;
+    right: 100%;
+    top: 0;
+    cursor:ew-resize;
+}

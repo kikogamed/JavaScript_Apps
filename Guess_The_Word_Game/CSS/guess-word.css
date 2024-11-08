@@ -1,0 +1,205 @@
+body {
+  background-color: #eee;
+}
+
+/* Page Title */
+.title {
+  font-size: 40px;
+  font-weight: bold;
+  background-color: white;
+  text-align: center;
+  font-family:monospace;
+  padding: 20px;
+  margin: -15px -8px;
+}
+
+/* Frame */
+
+.frame {
+  display: flex;
+  padding: 50px;
+}
+
+/* left Side */
+
+.left {
+  margin-left: 40px;
+}
+
+.try {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: -30px;
+}
+
+.try p {
+  color: #a7a7a7;
+  font-weight: bold;
+  font-size: 35px;
+  margin-right: 10px;
+  font-family: sans-serif;
+  transition: .3s;
+}
+
+.try input {
+  width: 60px;
+  height: 60px;
+  font-size: 40px;
+  text-align: center;
+  border: none;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: bold;
+  caret-color: transparent;
+  position: relative;
+  display: block;
+  border-radius: 5px;
+}
+
+.try > div {
+  position: relative;
+}
+.try .line {
+  position: absolute;
+  background-color: #dc472b;
+  width: 0%;
+  height: 3px;
+  bottom: 0px;
+  left: 0;
+  transition: .3s;
+  /* border-radius: 5px; */
+}
+
+.try input:focus {
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.try input:focus + div {
+  width: 100%;
+}
+
+.try input:focus {
+  outline: none;
+}
+
+/* Right Side */
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 100px;
+}
+
+.right p {
+  font-size: 40px;
+  font-family: sans-serif;
+  margin-bottom: 30px;
+}
+
+.key {
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  height: 50px;
+  margin-bottom: 10px;
+  align-self: flex-start;
+  width: 600px;
+  font-weight: 550;
+  align-items: center;
+}
+.key p {
+  font-size: 30px;
+}
+.key .color {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.k1 .color {
+  background-color: #ff9d0d;
+}
+.k2 .color {
+  background-color: #0ba78a;
+}
+.k3 .color {
+  background-color: #252f41;
+}
+
+/* Check word And Hint Buttons */
+
+.btns {
+  display: flex;
+  gap: 10px;
+  margin-left: 90px;
+}
+
+.check,
+.hint,
+.finish button {
+  background-color: #dc472b;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 7px;
+  font-family: sans-serif;
+  cursor: pointer;
+  width: 250px;
+  transition: .3s;
+}
+
+.hint {
+  background-color: #007779;
+  width: 100px;
+}
+
+.check:hover {
+  background-color: #953624;
+}
+.hint:hover {
+  background-color: #034041;
+}
+
+
+/* Win and LOOOSE */
+
+.finish {
+  display: none;
+}
+
+.finish p{
+  font-size: 50px;
+  font-weight: bold;
+  text-shadow: 2px 2px 3px #000;
+}
+.finish button {
+  background-color: #488583;
+  width: 350px;
+}
+.finish button:hover {
+  background-color: #dc472b;
+}
+
+/*  */
+
+@keyframes colors {
+  25% {
+    color: white;
+  }
+  50% {
+    color: black;
+    transform: translate3d(35px , 25px , 100px);
+  }
+  75% {
+    color: red;
+  }
+  100% {
+    color: #ff9d0d;
+  }
+}
